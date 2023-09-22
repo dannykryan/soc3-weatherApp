@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hackathon Weather App</title>
+  </head>
+  <body>
+    <!-- Main Container -->
+
+    <div class="container center">
+      <!-- Temporary image -->
+      <div>
+        <img src="images/rainy_icon.png" alt="rainy icon" height="200px" />
+      </div>
+
+      <h1>Temperature in London</h1>
+      <h2 id="temperature">Temparature</h2>
+
+      <!-- Refresh Button -->
+      <button type="button" class="refreshBtn">Refresh</button>
+
+      <!-- Measurement Toggle Switch -->
+      <span>C</span>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <span>F</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,30 +1,9 @@
-// create weather API app
-// create minimum viable product and, if time, add stretch goals
-// good planning before we start to code
-// solve problem before coding
-
-// Sprint 1 - Great plan (1 hour MIN)
-// How does the API work? - Read docs.
-// what can it do? Limitations?
-// Use Thunder Client and see what data it returns
-// Got stuck? - check a short video
-// Flowchart - plan out sprints (3)
-// Can we fetch and output todays weather data?
-
-// Sprint 2
-// Sprint 3
-
-// 30m break at 10:45
-// back together for 11:15
-// break at 12:30 for 1hr
-// 3pm 15m break
-
 const URL =
   "https://api.open-meteo.com/v1/forecast?latitude=51.5085&longitude=-0.1257&current_weather=true";
 const temperatureText = document.getElementById("temperature");
 const refreshButton = document.getElementsByClassName("refreshBtn")[0];
-const toggleBtn = document.getElementById("");
-const currentMeasurement = "C";
+const toggleBtn = document.getElementById("switch");
+let currentMeasurement = "C";
 
 // Celcius to Farenheit conversion Function
 function ctoF(celsius) {
@@ -33,11 +12,13 @@ function ctoF(celsius) {
 
 // Toggle measurement variable
 function toggleMeasure() {
-  if (currentMeasurement == "C") {
+  console.log("toggle button clicked");
+  if (currentMeasurement === "C") {
     currentMeasurement = "F";
   } else {
     currentMeasurement = "C";
   }
+  fetchWeather();
 }
 
 // Main function
@@ -45,12 +26,13 @@ async function fetchWeather() {
   const response = await fetch(URL);
   const data = await response.json();
   const temperature = data.current_weather.temperature;
-  console.log(temperature);
-  if (currentMeasurement == "C") {
+  if (currentMeasurement === "C") {
     temperatureText.innerText = `${temperature}°C`;
+    console.log(`${temperature}°C`);
   } else {
-    const temperatureF = ctoF(temperature);
+    const temperatureF = Math.round(ctoF(temperature));
     temperatureText.innerText = `${temperatureF}°F`;
+    console.log(`${ctoF(temperature)}`);
   }
   // Need error handling
 }
@@ -58,4 +40,4 @@ async function fetchWeather() {
 fetchWeather();
 
 refreshButton.addEventListener("click", fetchWeather);
-toggleBtn.addEventListener("click", toggleMeasure);
+toggleBtn.addEventListener("mousedown", toggleMeasure);

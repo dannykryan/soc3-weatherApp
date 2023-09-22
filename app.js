@@ -1,7 +1,7 @@
 const URL =
   "https://api.open-meteo.com/v1/forecast?latitude=51.5085&longitude=-0.1257&current_weather=true";
 const temperatureText = document.getElementById("temperature");
-const refreshButton = document.getElementsByClassName("refreshBtn")[0];
+const refreshButton = document.getElementById("refreshBtn");
 const toggleBtn = document.getElementById("switch");
 let currentMeasurement = "C";
 
@@ -19,6 +19,16 @@ function toggleMeasure() {
     currentMeasurement = "C";
   }
   fetchWeather();
+}
+
+async function fetchLocation() {
+  const locationParams = composeParameters(locationParameters);
+  // get location data from api
+  const locationData = await retrieveDataFromApi(
+    "https://nominatim.openstreetmap.org/search",
+    locationParams
+  );
+  return await locationData;
 }
 
 // Main function

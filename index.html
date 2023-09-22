@@ -10,17 +10,23 @@
     <!-- Main Container -->
 
     <div class="container center">
-      <!-- Temporary image -->
       <div>
-        <img src="images/rainy_icon.png" alt="rainy icon" height="200px" />
+        <input type="text" placeholder="Enter location" value="" id="input" />
+        <button type="submit" id="searchBtn" class="btn">Look up</button>
       </div>
 
-      <h1>London</h1>
+      <!-- Temporary image -->
+      <div>
+        <!-- Illustrations sourced from Kawaii Flat on Flaticon.com: https://www.flaticon.com/authors/kawaii/flat?author_id=1&type=standard -->
+        <img src="images/day/sunny.png" alt="weather-image" />
+      </div>
+
+      <h1 id="location">London</h1>
       <h2 id="temperature"></h2>
 
       <div id="dashboard">
         <!-- Refresh Button -->
-        <button type="button" class="refreshBtn">Refresh</button>
+        <button type="button" class="btn" id="refreshBtn">Refresh</button>
 
         <!-- Measurement Toggle Switch -->
         <div id="switch-container">

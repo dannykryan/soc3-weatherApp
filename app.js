@@ -173,7 +173,6 @@ searchButton.addEventListener("click", searchLocation);
 
 // Event listener for when the user submits the search form
 document.getElementById("searchBtn").addEventListener("click", function () {
-  const location = document.getElementById("input").value;
   searchLocation();
   fetchWeather();
 });

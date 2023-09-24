@@ -1,7 +1,7 @@
 body {
-  /* background-image: url(images/coastal\ landscape.jpeg);
-  background-size: 200%; */
-  background-color: rgb(229, 252, 253);
+  background-image: url(images/sunset.jpg);
+  background-size: 1920px;
+  /* background-color: rgb(229, 252, 253); */
   font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
@@ -150,4 +150,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.night-time {
+  background-image: linear-gradient(to top right, #281e38, #7740c0);
 }

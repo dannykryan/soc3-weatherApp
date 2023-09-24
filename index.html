@@ -9,7 +9,7 @@
   <body>
     <!-- Main Container -->
 
-    <div class="container center">
+    <div class="container center" id="container">
       <div>
         <input type="text" placeholder="Enter location" value="" id="input" />
         <button type="submit" id="searchBtn" class="btn">Look up</button>
@@ -18,7 +18,11 @@
       <!-- Temporary image -->
       <div>
         <!-- Illustrations sourced from Kawaii Flat on Flaticon.com: https://www.flaticon.com/authors/kawaii/flat?author_id=1&type=standard -->
-        <img src="images/day/sunny.png" alt="weather-image" />
+        <img
+          src="images/day/sunny.png"
+          alt="weather-image"
+          id="weather-image"
+        />
       </div>
 
       <h1 id="location">London</h1>
@@ -40,6 +44,7 @@
       </div>
     </div>
 
+    <script src="codeLookup.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

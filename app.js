@@ -122,11 +122,11 @@ function imageUpdate(weatherCode, isDay) {
   console.log(isDay);
   if (isDay === 0 && [0, 1, 2, 3, 45, 48, 80, 81, 82].includes(weatherCode)) {
     let weatherDescription = codeLookupNight[weatherCode];
-    weatherIcon.src = `images/night/${weatherDescription}.png`;
+    weatherIcon.src = `images/Night/${weatherDescription}.png`;
     console.log(weatherDescription);
   } else {
     let weatherDescription = codeLookupDay[weatherCode];
-    weatherIcon.src = `images/day/${weatherDescription}.png`;
+    weatherIcon.src = `images/Day/${weatherDescription}.png`;
     console.log(weatherDescription);
   }
 }

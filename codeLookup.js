@@ -10,7 +10,7 @@ let codeLookupDay = {
   55: "drizzle-dense",
   56: "freezing-drizzle",
   57: "freezing-drizzle",
-  61: "rain slight",
+  61: "rain-slight",
   63: "rain",
   65: "heavy-rain",
   66: "sleet-hail",

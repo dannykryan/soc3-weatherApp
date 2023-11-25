@@ -11,7 +11,7 @@ A basic weather app, built with HTML, CSS, and Vanilla JavaScript using a third-
 
 ## Technical Requirements
 
-- HTML, CSS and JavaScript..
+- HTML, CSS and JavaScript.
 - External API: Utilize a public API for real-time weather data.
 
 ## Refactoring

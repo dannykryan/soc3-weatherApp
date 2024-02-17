@@ -4,7 +4,7 @@
 
 A basic weather app, built with HTML, CSS, and Vanilla JavaScript using two third party APIs: [Open Meteo](https://open-meteo.com/) for weather data, and [Open Street Map](https://nominatim.openstreetmap.org/) for geolocation.
 
-By using these two APIs, the user can look up their current location or search for any location in the worls and receive real-time weather data.
+By using these two APIs, the user can look up their current location or search for any location in the world and receive real-time weather data.
 
 ## Objectives
 

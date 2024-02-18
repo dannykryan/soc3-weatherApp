@@ -4,7 +4,9 @@
 
 [View the demo here](https://dannykryan.github.io/soc3-weatherApp/)
 
-A basic weather app, built with HTML, CSS, and Vanilla JavaScript using two third party APIs: [Open Meteo](https://open-meteo.com/) for weather data, and [Open Street Map](https://nominatim.openstreetmap.org/) for geolocation.
+A basic weather app, built with HTML, CSS, and Vanilla JavaScript. It was originally part of a one-day 'hackathon' project as a bootcamper at The School of Code full-stack developer bootcamp but has gone through many changes. 
+
+It uses two third party APIs: [Open Meteo](https://open-meteo.com/) for weather data, and [Open Street Map](https://nominatim.openstreetmap.org/) for geolocation.
 
 By using these two APIs, the user can look up their current location or search for any location in the world and receive real-time weather data.
 
